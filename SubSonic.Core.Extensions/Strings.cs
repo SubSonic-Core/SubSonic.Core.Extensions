@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Humanizer;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 
@@ -29,6 +30,11 @@ namespace SubSonic.Core
         public static string Join (this IEnumerable<string> source, string seperator)
         {
             return string.Join(seperator, source);
+        }
+
+        public static string Pluralize(this string word)
+        {
+            return InflectorExtensions.Pluralize(word);
         }
     }
 }

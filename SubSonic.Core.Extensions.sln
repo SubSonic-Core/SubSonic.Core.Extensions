@@ -3,17 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubSonic.Core.Proxies", "SubSonic.Core.Proxies\SubSonic.Core.Proxies.csproj", "{954140DF-C319-4621-880D-1D211A8942D0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{53D05F6B-36E1-4AE5-BE20-D03E26649A8E}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 		version.json = version.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubSonic.Core.Proxies.Testing", "SubSonic.Core.Proxies.Testing\SubSonic.Core.Proxies.Testing.csproj", "{6475F31D-A54E-402E-B2F9-B686D3B8D51E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubSonic.Core.Extensions", "SubSonic.Core.Extensions\SubSonic.Core.Extensions.csproj", "{A541394D-A74E-40CD-8AAE-27DEC222B893}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubSonic.Core.Extensions", "..\SubSonic.Core.Remoting\SubSonic.Core.Extensions\SubSonic.Core.Extensions.csproj", "{65F7CEAC-14BA-45AF-92AB-6E914E39940A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubSonic.Core.Extensions.Testing", "SubSonic.Core.Extensions.Testing\SubSonic.Core.Extensions.Testing.csproj", "{DE451428-E3DF-4101-933D-6D48DB430042}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +19,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{954140DF-C319-4621-880D-1D211A8942D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{954140DF-C319-4621-880D-1D211A8942D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{954140DF-C319-4621-880D-1D211A8942D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{954140DF-C319-4621-880D-1D211A8942D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6475F31D-A54E-402E-B2F9-B686D3B8D51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6475F31D-A54E-402E-B2F9-B686D3B8D51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6475F31D-A54E-402E-B2F9-B686D3B8D51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6475F31D-A54E-402E-B2F9-B686D3B8D51E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65F7CEAC-14BA-45AF-92AB-6E914E39940A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65F7CEAC-14BA-45AF-92AB-6E914E39940A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65F7CEAC-14BA-45AF-92AB-6E914E39940A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65F7CEAC-14BA-45AF-92AB-6E914E39940A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A541394D-A74E-40CD-8AAE-27DEC222B893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A541394D-A74E-40CD-8AAE-27DEC222B893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A541394D-A74E-40CD-8AAE-27DEC222B893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A541394D-A74E-40CD-8AAE-27DEC222B893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE451428-E3DF-4101-933D-6D48DB430042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE451428-E3DF-4101-933D-6D48DB430042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE451428-E3DF-4101-933D-6D48DB430042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE451428-E3DF-4101-933D-6D48DB430042}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
