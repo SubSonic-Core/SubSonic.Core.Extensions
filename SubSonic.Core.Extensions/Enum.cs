@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SubSonic.Core
 {
-    public static partial class Extensions
+    public static partial class CoreExtensions
     {
         public static TEnum Parse<TEnum>(this string source)
             where TEnum: struct

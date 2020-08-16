@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace SubSonic.Core
 {
-    public static partial class Extensions
+    public static partial class CoreExtensions
     {
         public static void AddIfNotExist<TType>(this ICollection<TType> collection, TType element)
         {

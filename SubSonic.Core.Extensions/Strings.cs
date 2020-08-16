@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace SubSonic.Core
 {
-    public static partial class Extensions
+    public static partial class CoreExtensions
     {
         public static bool IsNullOrEmpty(this string source)
         {
