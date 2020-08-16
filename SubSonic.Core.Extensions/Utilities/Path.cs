@@ -3,11 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace SubSonic.Core
 {
-    public partial class Utilities
-    {
+	public static partial class Utilities
+	{
+		private static readonly Regex s_frameworkRegex = new Regex("(?<framework>[a-z]*)(?<major>[0-9]*).(?<minor>[0-9]*)", RegexOptions.Compiled);
+
 		public static string FindHighestVersionedDirectory(string parentFolder, Func<string, bool> validate)
 		{
 			string bestMatch = null;
@@ -25,6 +28,22 @@ namespace SubSonic.Core
 				}
 			}
 			return bestMatch;
+		}
+
+		public static decimal GetNetStandardVersion(string framework)
+		{
+			var match = s_frameworkRegex.Match(framework);
+
+			if (match.Groups["framework"].Value == "netcoreapp")
+			{
+				int.TryParse(match.Groups["major"].Value, out int major);
+
+				if (major >= 3)
+				{
+					return 2.1M;
+				}
+			}
+			return 2.0M;
 		}
 	}
 }
